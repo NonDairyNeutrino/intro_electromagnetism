@@ -1,0 +1,7 @@
+name = "IntroElectromagnetism"
+uuid = "0b270e4a-90d4-537a-b40f-a61e595bc3eb"
+authors = ["Nathan Chapman <NChapman@whatcom.edu>"]
+version = "0.1.0"
+
+[compat]
+julia = "1.10"

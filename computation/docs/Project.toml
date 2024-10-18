@@ -1,0 +1,11 @@
+# Don't forget to run
+#
+#     pkg> dev ..
+#
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+LiveServer = "16fef848-5104-11e9-1b77-fb7a48bbb589"
+IntroElectromagnetism = "0b270e4a-90d4-537a-b40f-a61e595bc3eb"
+
+[compat]
+Documenter = "1"

@@ -1,0 +1,13 @@
+# Changes here will be overwritten by Copier
+AnswerStrategy: recommended
+Authors: Nathan Chapman <NChapman@whatcom.edu>
+CodeOfConductContact: NChapman@whatcom.edu
+JuliaIndentation: 4
+JuliaMinVersion: '1.10'
+License: GPL-3.0
+LicenseCopyrightHolders: Nathan Chapman
+PackageName: IntroElectromagnetism
+PackageOwner: NonDairyNeutrino
+PackageUUID: 0b270e4a-90d4-537a-b40f-a61e595bc3eb
+_commit: v0.13.0
+_src_path: https://github.com/JuliaBesties/BestieTemplate.jl
