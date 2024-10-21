@@ -64,8 +64,11 @@ During this exam you are allowed access to both the textbook and your notes.  Go
   + In the space below, draw a free-body diagram of the ball when in its new position.
 
 // 23.7 Motion of a Charged Particle in an Electric Field
-+ The ionized Helium atom $"He"^+$ has two protons and two neutrons in its nucleus $Q_n = 2e$ while only a single electron orbiting $Q_e = -e$.
-  The Bohr model of the atom with "electron shells" suggests electrons can only exist at certain distances from the nucleus in order to "quantize" the
++ Ionized Helium $"He"^+$ has two protons and two neutrons in its nucleus $Q_n = 2e$ while only a single electron orbiting $Q_e = -e$.
+  The Bohr model of the atom states that electrons can only exist at certain distances from the nucleus in order to "quantize" its electrostatic
+  potential energy. These distances form concentric circular "rails" upon which the electrons travel, otheriwise known as _electron shells_ or _energy levels_, with the "lowest energy level" being closest to the nucleus.
+
+  + Draw and label the following vectors on a diagram of the $"He"^+$ ion with the electron in the lowest energy level: the electron's velocity $harpoon(v)$ and acceleration $harpoon(a)$, the net force $harpoon(F)$ on the electron, and the electric field $harpoon(E)$ at the position of the electron. *Note: Don't worry about magnitude and length, just focus on direction.*
 
 // == Gauss's Law
 
