@@ -88,7 +88,17 @@ During this exam you are allowed access to both the textbook and your notes.  Go
 
   + What is the electric flux through the entire hemisphere?
 
-+ 24.5 Using Gauss's Law
+// + 24.5 Using Gauss's Law
++ Consider a coaxial cable of length $L$ with a conducting hollow core of radius $R_c$ with uniform surface charge density $eta$ and
+  an outer conducting shield of radius $R_s > R_c$ with uniform surface charge density $-eta$.
+
+  + What is the electric flux $Phi_"i"$ through a Gaussian cylinder of radius $R_G < R_c$ and length $L_G < L$ that is coaxial with the cable?
+
+  + What is the electric flux $Phi_"b"$ through a Gaussian cylinder of radius $R_c < R_G < R_s$ and length $L_G < L$ that is coaxial with the cable?
+
+  + What is the electric flux $Phi_"o"$ through a Gaussian cylinder of radius $R_s < R_G$ and length $L_G < L$ that is coaxial with the cable?
+
+  + Graph the electric flux through a Guassian cylinder of radius $R_c < R_G < R_s$ that is coaxial with the cable as its length $L_G$ increases from $0L$ to $2L$.
 
 // == The Electric Potential
 
