@@ -72,11 +72,21 @@ During this exam you are allowed access to both the textbook and your notes.  Go
 
 // == Gauss's Law
 
-+ 24.1 Symmetry
+// + 24.1 Symmetry
 
 // + 24.2 The Concept of Flux
 
-+ 24.3 Calculating Electric Flux
+// + 24.3 Calculating Electric Flux
++ Consider a uniform electric field $harpoon(E) = E hat(x)$ and a hemisphere of radius $R$ oriented such that the area vector of the base points
+  in the $-hat(x)$ direction.
+
+  + What is the electric flux through the base of the hemisphere?
+
+  + What is the electric flux through the dome of the hemispehre? Note: for a hemisphere, the area element $d harpoon(A)$ is such that 
+    $ d harpoon(A) = R^2 sin(theta) [sin(theta) cos(phi) hat(x) + sin(theta) sin(phi) hat(y) + cos(theta) hat(z)] d theta d phi. $
+    where $0 <= theta <= pi$ and $-pi/2 <= phi <= pi/2$.  _Hint: $integral_0^pi sin^2(theta) d theta = pi/2$_.
+
+  + What is the electric flux through the entire hemisphere?
 
 + 24.5 Using Gauss's Law
 
