@@ -3,5 +3,9 @@ uuid = "0b270e4a-90d4-537a-b40f-a61e595bc3eb"
 authors = ["Nathan Chapman <NChapman@whatcom.edu>"]
 version = "0.1.0"
 
+[deps]
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+
 [compat]
+Plots = "1.40.8"
 julia = "1.10"
