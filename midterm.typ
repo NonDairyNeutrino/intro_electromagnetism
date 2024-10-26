@@ -119,6 +119,10 @@ During this exam you are allowed access to both the textbook and your notes.  Go
 
 // == Potential & Field
 
-+ 26.2 Finding the Electric Field from the Potential
+// + 26.2 Finding the Electric Field from the Potential
++ The figure below shows the equipotential lines for some hidden distribution of charge.
 
+  + Draw the electric field vectors at the dots on this contour map.  The length of each vector should be proportional to the field strength at that point.
+
+  + What is the strength of the electric field at [this position] in [this direction]
 // + 26.7 Dielectrics
