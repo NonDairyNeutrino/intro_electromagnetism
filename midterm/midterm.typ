@@ -7,6 +7,7 @@
 #set text(font: "New Computer Modern")
 #set enum(numbering: "1.a)")
 
+#let isSolution = false
 #let title = [= Physics 223&: Engineering Physics III Midterm]
 
 #align(center)[#title]
@@ -103,17 +104,34 @@ During this exam you are allowed access to both the textbook and your notes.  Go
 // == The Electric Potential
 
 // 25.2 The Potential Energy of Point Charges
-+ Consider a ring of radius $R$ with a total charge $Q > 0$, and an object with mass $m$ and charge $q > 0$ at a distance $d$ along the central axis of the
-  ring moving with velocity $harpoon(v) = -v hat(d)$ along the axis toward the ring.  The electric field $harpoon(E)(d)$ at a point on the central axis at a distance $d$ away from the center of the ring is given by 
-  $ harpoon(E)(d) = 1 / (4 pi epsilon_0) (Q d) / (d^2 + R^2)^(3\/2) hat(d). $
++ Consider a ring of radius $R$ with a total charge $Q > 0$, and an object with mass $m$ and charge $q > 0$ at a distance $d_0$ along the central axis of the
+  ring moving with velocity $harpoon(v) = -v hat(d)$ along the axis toward the ring.  The electric field $harpoon(E)(d)$ at a point on the central axis at a
+  distance $d$ away from the center of the ring is given by $ harpoon(E)(d) = 1 / (4 pi epsilon_0) (Q d) / (d^2 + R^2)^(3\/2) hat(d). $
 
   + What is the work done by the electric force on the object as it moves from its initial point to the center of the ring?
 
   + What is the change in potential energy of the object between its initial position and the center of the ring?
 
-  + What initial speed does the object need to have in order to come to rest at the center of the ring? _Hint: The electric force conserves mechanical energy._
+  + What initial speed does the object need to have in order to come to rest at the center of the ring? 
+  _Hint: The electric force conserves mechanical energy._
 
-+ 25.4 The Electric Potential
+// + 25.4 The Electric Potential
++ Given two atoms seperated by a great distance, they will naturally move toward each other due to the electro-static attraction between the electrons
+  and the protons. At some point though, the electro-static repulsion between the electrons and between the protons becomes stronger.
+  This competition results in an optimal distance between the atoms known as the _bond length_. 
+  For two Hydrogen atoms, known as _molecular Hydrogen_ $H_2$, this optimal distance is 74 pm (1 pm = 1 picometer = $10^(-12)$ m).
+  #figure(
+    image("H2-energy-2.png", width: 66%),
+    caption: [The dependence of molecular Hydrogen's potential energy on the seperation distance results in an optimal distance of 74 pm.]
+  )
+
+  + Is the electric potential at the location of each Hydrogen atom greater than, less than, or equal to the electric potential around it?
+
+    #if isSolution [
+      blahblahblahblah
+    ]
+
+  + What is the expression for the electric potential at a point far away, but not infinitely so, from a $H_2$ molecule?
 
 + 25.5 The Electric Potential Inside a Parallel-Plate Capacitor
 
