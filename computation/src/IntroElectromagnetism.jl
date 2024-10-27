@@ -17,6 +17,9 @@ struct Particle
     mass     :: Float64
     position :: Vector{Float64}
     velocity :: Vector{Float64}
+    function Particle(; charge = 1, mass = 1, position = [0,0], velocity = [0,0])
+        new(charge, mass, position, velocity)
+    end
 end
 
 echo(msg) = (display(msg); msg)
