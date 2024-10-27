@@ -1,6 +1,6 @@
 module IntroElectromagnetism
-export Particle, field, potential, potentialField, boundingBox, threshold
-using LinearAlgebra: norm, dot
+export Particle, field, potential, drawEquipotentials, threshold
+using LinearAlgebra: norm, normalize, dot
 
 """
     The electric constant k = 1 / 4 pi epsilon_0
@@ -19,21 +19,11 @@ struct Particle
     velocity :: Vector{Float64}
 end
 
-function boundingBox(dimMin, dimMax, pad = 0.1)
-    intervalLength = dimMax - dimMin
-    if dimMin != dimMax
-        return (dimMin - pad * intervalLength, dimMax + pad * intervalLength)
-    elseif dimMin == dimMax != 0
-        return (0.9 * dimMin, 1.1 * dimMax)
-    else
-        return (-1,1)
-    end
-end
-
 echo(msg) = (display(msg); msg)
 threshold(x :: Float64, thresh = 10^(-10)) = x < thresh ? 0.0 : x
 
 include("electric_potential.jl")
 include("electric_field.jl")
+include("plotting.jl")
 
 end

@@ -22,6 +22,6 @@ end
 
 Gives a the value of the electric potential due to all chages in the system.
 """
-function potentialField(particleTuple :: Tuple) :: Function
-    return (position :: Vector{Float64} -> sum(potential(particle, position) for particle in particleTuple))
+function potential(system :: Tuple) :: Function
+    return (position :: Vector{Float64} -> sum(potential(particle, position) for particle in system))
 end
