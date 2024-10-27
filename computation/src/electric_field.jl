@@ -10,3 +10,12 @@ function field(particle :: Particle, position :: Vector{Float64}) :: Vector{Floa
     direction   = seperation / norm(seperation)     # unit vector pointing between the two objects
     return strength * direction
 end
+
+"""
+    field(particle :: Particle) :: Function
+
+Gives a function for the electric field for the given particle.
+"""
+function field(particle :: Particle) :: Function
+    return (position -> field(particle, position))
+end
