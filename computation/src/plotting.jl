@@ -55,8 +55,22 @@ function drawEquipotentials(particleTuple :: Tuple)
         # fill = true
     )
 
-    print("Plotting complete. Save image as (excluding file extension): ")
-    savefig(readline() * ".png")
+    # now begins the best part of programming: working with user input
+    print("Plotting complete. Saving image as png with name (press Enter to cancel): ")
+    name = readline()
+    if !isempty(name)
+        while ispath(name * ".png") # check if file already exists
+            print("File already exists. Overwrite (y/N)? ")
+            if readline() == "y"
+                break
+            else
+                print("New name: ")
+                name = readline()
+            end
+        end
+        savefig("$name.png")
+        println("Image saved at: ", joinpath(pwd(), name * ".png"))
+    end
 end
 
 # draw the electric field vectors
