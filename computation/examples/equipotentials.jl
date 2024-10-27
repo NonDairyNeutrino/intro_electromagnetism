@@ -4,15 +4,17 @@ using Plots: plot, contour!, scatter!, quiver!
 
 # initialize the system of objects
 particleTuple = (
-    Particle(-10, 1, 0.5 * [-1, 0], [0, 0]),
-    Particle( 10, 1, 0.5 * [1, 0], [0,0])
+    Particle(-5, 1, 0.5 * [-1, 0], [0, 0]),
+    Particle( 100, 1, 0.5 * [1, 0], [0,0])
 )
 
-# find the bounding box of the system, both in position and potential
+# find the bounding box of the system
 xMin, xMax = getindex.(getproperty.(particleTuple, :position), 1) |> extrema
 yMin, yMax = getindex.(getproperty.(particleTuple, :position), 2) |> extrema
 plotRange  = (xBounds = boundingBox(xMin, xMax), yBounds = boundingBox(yMin, yMax))
 
+# find the potential at the corners of the bounding box
+# NOTE: use this to set refererence point for contours
 contourBounds = extrema(potentialField(particleTuple).(Iterators.product(plotRange...) .|> (x -> [x...])))
 
 # initialize the plot
@@ -27,7 +29,7 @@ contour!(
     clims   = contourBounds,
     clabels = true,
     cbar    = true,
-    ratio   = :equal,
+    # ratio   = :equal,
     gopacity = 0.25
 )
 
