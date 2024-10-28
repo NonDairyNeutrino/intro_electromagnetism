@@ -7,6 +7,7 @@
 #set text(font: "New Computer Modern")
 #set enum(numbering: "1.a)")
 
+#let isPractice = true
 #let isSolution = false
 #let title = [= Physics 223&: Engineering Physics III Midterm]
 
@@ -26,25 +27,25 @@ During this exam you are allowed access to both the textbook and your notes.  Go
 // == Electric Charges & Forces
 
 // 22.3 Insulators & Conductors
-+ One end of a *neutral* rod is brought into close proximity, but does not touch, an object with charge $Q != 0$.
++ One end of a *neutral* rod is brought into close proximity to, but does not touch, an object with charge $Q != 0$.
 
-  + Describe (with words and a picture) the final charge distribution of the rod if it is made of a *conducting* material such as copper? 
-    How did it get like that? 
+  + Draw the final charge distribution of the rod if it is made of a *conducting* material such as copper? 
+    Describe the motion of the charges before getting there.
 
-  + Describe (with words and a picture) the final charge distribution of the rod if it is made of an *insulating* material such as rubber?
-    How did it get like that? 
+  + Draw the final charge distribution of the rod if it is made of an *insulating* material such as rubber?
+    Describe the motion of the charges before getting there.
 
-  + Describe (with words and a picture) the final charge distribution of the rod if it is then pulled away from the charged object.
+  + Draw the final charge distribution of the rod after it is been pulled away from the charged object.
     Does this depend on if the rod is a conductor or an insulator? 
 
   + The charged object is said to \_\_\_\_\_\_\_\_ the rod?
-  #columns(4, [#h(20%)a. Charge #colbreak() #h(20%)b. Electrify #colbreak() #h(20%)c. Polarize #colbreak() #h(20%)d. Magnetize])
+    #columns(4, [a. Charge #colbreak() b. Electrify #colbreak() c. Polarize #colbreak() d. Magnetize])
 
 // 22.4 Coulomb's Law #25
 // #pagebreak()
-+ The gray positive charge experience a net force due to two other charges: the +1 charge that is seen and a +4 charge that is not seen.
++ The gray positive charge experiences a net force due to two other charges: the +1 charge that is seen and a +4 charge that is not seen.
   Add the +4 charge to the figure at the correct position and explain why you chose that position. 
-  #columns(2, [ ])//#figure()])
+  #columns(2, [#colbreak() #figure(image("2.png"))])
 
 // == The Electric Field
 
@@ -52,24 +53,26 @@ During this exam you are allowed access to both the textbook and your notes.  Go
 + For each figure, draw and label the net electric field vector $harpoon(E)_("net")$ at each of the points marked with a dot or, if appropriate,
   label the dot $harpoon(E)_("net") = harpoon(0)$.  The lengths of your vectors should indicate the magnitude of $harpoon(E)$ at each point.
 
-  #columns(3, [#h(11%)a. #colbreak() #h(11%)b. #colbreak() #h(11%)c. ]) 
+  #image("3.png")
 
 // + 23.4 The Electric Fields of Rings, Disks, Planes, and Spheres
 
 // 23.5 The Parallel-Plate Capacitor
 + A ball hangs from a thread between two vertical capacitor plates. Initially, the ball hangs straight down. The capacitor plates are charged as
-  shown, then the ball is given a small negative charge. The ball moves to one side, but not enough to touch a capacitor plate.
+  shown, then *the ball is given a small negative charge*. The ball moves to one side, but not enough to touch a capacitor plate.
 
   + Draw the ball and thread in the ball's new equilibrium position.
 
-  + In the space below, draw a free-body diagram of the ball when in its new position.
+  + In the space below, draw a free-body diagram of the ball when in its new position. 
+  #align(right, [#image("4.png", height: 25%)])
 
 // 23.7 Motion of a Charged Particle in an Electric Field
 + Ionized Helium $"He"^+$ has two protons and two neutrons in its nucleus $Q_n = 2e$ while only a single electron orbiting $Q_e = -e$.
   The Bohr model of the atom states that electrons can only exist at certain distances from the nucleus in order to "quantize" its electrostatic
   potential energy. These distances form concentric circular "rails" upon which the electrons travel, otheriwise known as _electron shells_ or _energy levels_, with the "lowest energy level" being closest to the nucleus.
 
-  + Draw and label the following vectors on a diagram of the $"He"^+$ ion with the electron in the lowest energy level: the electron's velocity $harpoon(v)$ and acceleration $harpoon(a)$, the net force $harpoon(F)$ on the electron, and the electric field $harpoon(E)$ at the position of the electron. *Note: Don't worry about magnitude and length, just focus on direction.*
+  Draw and label the following vectors on a diagram of the $"He"^+$ ion with the electron in the lowest energy level: the electron's velocity $harpoon(v)$ and acceleration $harpoon(a)$, the net force $harpoon(F)$ on the electron, and the electric field $harpoon(E)$ at the position of the electron. *Note: Don't worry about magnitude and length, just focus on direction.*
+    #align(right, [#image("5.png", width: 30%)])
 
 // == Gauss's Law
 
@@ -85,15 +88,18 @@ During this exam you are allowed access to both the textbook and your notes.  Go
 
   + What is the electric flux through the dome of the hemispehre? Note: for a hemisphere, the area element $d harpoon(A)$ is such that 
     $ d harpoon(A) = R^2 sin(theta) [sin(theta) cos(phi) hat(x) + sin(theta) sin(phi) hat(y) + cos(theta) hat(z)] d theta d phi. $
-    where $0 <= theta <= pi$ and $-pi/2 <= phi <= pi/2$.  _Hint: $integral_0^pi sin^2(theta) d theta = pi/2$_.
+    where $0 <= theta <= pi$ and $-pi/2 <= phi <= pi/2$.  _Hint: $integral_0^pi sin^2(theta) d theta = pi/2$_. 
+    #align(right, image("6.png", height: 20%))
 
   + What is the electric flux through the entire hemisphere?
+    #v(30%)
 
 // + 24.5 Using Gauss's Law
 + Consider a coaxial cable of length $L$ with a conducting hollow core of radius $R_c$ with uniform surface charge density $eta$ and
-  an outer conducting shield of radius $R_s > R_c$ with uniform surface charge density $-eta$.
+  an outer conducting shield of radius $R_s > R_c$ with uniform surface charge density $-eta$. *Note: the space between the core and the shield is _empty_.*
 
   + What is the electric flux $Phi_"i"$ through a Gaussian cylinder of radius $R_G < R_c$ and length $L_G < L$ that is coaxial with the cable?
+  #align(right, image("Coaxial_cable_cutaway.svg.png", width: 40%))
 
   + What is the electric flux $Phi_"b"$ through a Gaussian cylinder of radius $R_c < R_G < R_s$ and length $L_G < L$ that is coaxial with the cable?
 
@@ -113,7 +119,7 @@ During this exam you are allowed access to both the textbook and your notes.  Go
   + What is the change in potential energy of the object between its initial position and the center of the ring?
 
   + What initial speed does the object need to have in order to come to rest at the center of the ring? 
-  _Hint: The electric force conserves mechanical energy._
+    _Hint: The electric force conserves mechanical energy._
 
 // + 25.4 The Electric Potential
 + Given two atoms seperated by a great distance, they will naturally move toward each other due to the electro-static attraction between the electrons
@@ -133,14 +139,21 @@ During this exam you are allowed access to both the textbook and your notes.  Go
 
   + What is the expression for the electric potential at a point far away, but not infinitely so, from a $H_2$ molecule?
 
-+ 25.5 The Electric Potential Inside a Parallel-Plate Capacitor
+// + 25.5 The Electric Potential Inside a Parallel-Plate Capacitor
 
 // == Potential & Field
 
 // + 26.2 Finding the Electric Field from the Potential
 + The figure below shows the equipotential lines for some hidden distribution of charge.
 
-  + Draw the electric field vectors at the dots on this contour map.  The length of each vector should be proportional to the field strength at that point.
+  #if isPractice [
+    #align(center, image("equipotentials_easy.png", width: 66%))
+  ] else [
+    #align(center, image("equipotentials.png", width: 66%))
+  ]
 
-  + What is the strength of the electric field at [this position] in [this direction]
+  + Draw the electric field vectors at the dots on this contour map.  
+    The length of each vector should be proportional to the field strength at that point.
+
+  + Rank the strength of the electric field at [this position] in [this direction]
 // + 26.7 Dielectrics
