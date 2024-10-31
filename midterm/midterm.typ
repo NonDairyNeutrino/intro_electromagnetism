@@ -1,4 +1,4 @@
-#let isPractice = true
+#let isPractice = false
 #let isSolution = false
 #let title = [= Physics 223&: Engineering Physics III #if isPractice [Practice] Midterm]
 
@@ -28,7 +28,7 @@ During this exam you are allowed access to both the textbook and your notes.  Go
 ///////////// PAGE 1 /////////////
 // == Electric Charges & Forces
 // 22.3 Insulators & Conductors
-+ One end of a *neutral* rod is brought into close proximity to, but does not touch, an object with charge $Q != 0$.
++ One end of a *neutral* rod is brought into close proximity to, but does not touch, an object with charge $Q > 0$.
 
   + Draw the final charge distribution of the rod if it is made of a *conducting* material such as copper? 
     Describe the motion of the charges before getting there.
@@ -43,7 +43,7 @@ During this exam you are allowed access to both the textbook and your notes.  Go
     #v(15%)
 
   + The charged object is said to \_\_\_\_\_\_\_\_ the rod?
-    #columns(4, [a. Charge #colbreak() b. Electrify #colbreak() c. Polarize #colbreak() d. Magnetize])
+    #columns(4, [a. charge #colbreak() b. electrify #colbreak() c. polarize #colbreak() d. magnetize])
   #v(1fr)
 
 ///////////// PAGE 2 /////////////
@@ -94,9 +94,12 @@ During this exam you are allowed access to both the textbook and your notes.  Go
   + What is the electric flux through the base of the hemisphere?
     #v(10%)
 
-  + What is the electric flux through the dome of the hemispehre? Note: for a hemisphere, the area element $d harpoon(A)$ is such that 
+  + What is the electric flux through the dome of the hemispehre? 
+    
+    Note: for a hemisphere, the area element $d harpoon(A)$ is such that 
     $ d harpoon(A) = R^2 sin(theta) [sin(theta) cos(phi) hat(x) + sin(theta) sin(phi) hat(y) + cos(theta) hat(z)] d theta d phi. $
-    where $0 <= theta <= pi$ and $-pi/2 <= phi <= pi/2$.  _Hint: $integral_0^pi sin^2(theta) d theta = pi/2$_. 
+    where $0 <= theta <= pi$ and $-pi/2 <= phi <= pi/2$. 
+    _Hint: $integral_0^pi sin^2(theta) d theta = pi/2$ and $integral.double f(r) g(theta) d r d theta = integral f(r) d r integral g(theta) d theta$_. 
     #align(right, image("6.png", height: 20%))
 
   + What is the electric flux through the entire hemisphere?
@@ -121,10 +124,10 @@ During this exam you are allowed access to both the textbook and your notes.  Go
 ///////////// PAGE 5 /////////////
 // == The Electric Potential
 // 25.2 The Potential Energy of Point Charges
-+ Consider a ring of radius $R$ with a total charge $Q > 0$, and an object with mass $m$ and charge $q > 0$ at a distance $d_0$ along the central axis of the
-  ring moving with velocity $harpoon(v) = -v hat(d)$ along the axis toward the ring.  The electric field $harpoon(E)(d)$ at a point on the central axis at a
-  distance $d$ away from the center of the ring is given by 
-  $ harpoon(E)(d) = 1 / (4 pi epsilon_0) (Q d) / (d^2 + R^2)^(3\/2) hat(d). $
++ Consider a ring of radius $R$ with a total charge $Q > 0$, and an object with mass $m$ and charge $q > 0$ at a distance $s_0$ along the central axis of the
+  ring moving with velocity $harpoon(v) = -v hat(s)$ along the axis toward the ring.  The electric field $harpoon(E)(s)$ at a point on the central axis at a
+  distance $s$ away from the center of the ring is given by 
+  $ harpoon(E)(harpoon(s)) = 1 / (4 pi epsilon_0) (Q s) / (s^2 + R^2)^(3\/2) hat(s). $
 
   + What is the work done by the electric force on the object as it moves from its initial point to the center of the ring?
     _Hint: Use u-substitution_
@@ -145,15 +148,16 @@ During this exam you are allowed access to both the textbook and your notes.  Go
   For two Hydrogen atoms, known as _molecular Hydrogen_ $H_2$, this optimal distance is 74 pm (1 pm = 1 picometer = $10^(-12)$ m).
   #align(center, image("H2-energy-2.png", width: 66%))
 
-  + Is the electric potential at the location of each Hydrogen atom greater than, less than, or equal to the electric potential around it?
-    #v(12%)
+  + Is the electric potential at the location of each Hydrogen atom greater than or less than the electric potential around it?
+    What would happen if it was the opposite?
+    #v(9%)
 
     #if isSolution [
       blahblahblahblah
     ]
 
-  + What is the expression for the electric potential at a point far away, but not infinitely so, from a $H_2$ molecule and why?
-    #v(12%)
+  + What is an approximate expression for the electric potential at a point far away (i.e. $r >> 74 "pm"$), but not infinitely so, from a $H_2$ molecule and why?
+    #v(9%)
 
 // == Potential & Field
 // + 26.2 Finding the Electric Field from the Potential
