@@ -70,7 +70,7 @@ For example, if the current working directory is the root of this project, the e
 julia examples/equipotentials.jl
 ```
 
-![Equipotentials for charge configuration above.](equipotentials.png)
+![Equipotentials for charge configuration above.](equipotentials_triangle.png)
 
 ## How to Cite
 
