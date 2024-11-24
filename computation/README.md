@@ -54,11 +54,11 @@ particleTuple = (
 drawEquipotentials(particleTuple)
 ```
 
-where particles can be added or removed or changed.  
+where particles can be added or removed or changed.
 
 ## Running the scripts
 
-These scripts can be run from the command line (e.g. Powershell, bash, etc.) using 
+These scripts can be run from the command line (e.g. Powershell, bash, etc.) using
 
 ```bash
 julia path/to/script.jl
@@ -69,6 +69,8 @@ For example, if the current working directory is the root of this project, the e
 ```bash
 julia examples/equipotentials.jl
 ```
+
+![Equipotentials for charge configuration above.](equipotentials.png)
 
 ## How to Cite
 
